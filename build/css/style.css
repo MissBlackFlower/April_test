@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="text"], input[type="email"], input[type="tel"], textarea { -webkit-appearance: none; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+input[type="submit"], button { cursor: pointer; }
+
+div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+html { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+@font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
+
+.icon-sepa:before { content: ""; }
+
+.icon-skrill:before { content: ""; }
+
+body { font-family: "Roboto", sans-serif; font-size: 14px; }
+
+.wrapper { width: 1180px; margin: auto; }
+.wrapper .header { width: inherit; clear: right; }
+.wrapper .header .header__activLink { display: block; float: left; margin-top: 60px; }
+.wrapper .header .header__tel { float: right; width: 800px; margin-right: 20px; margin-top: 20px; }
+.wrapper .header .header__menu { float: right; margin-right: 20px; margin-top: 19px; }
+.wrapper .header .header__menu a { display: block; float: right; margin-left: 20px; }
+.wrapper .header .header__logo { display: block; float: right; }
+.wrapper .menu { float: left; width: 200px; }
+.wrapper .content { float: right; margin-top: 50px; width: 980px; }
+.wrapper .content video { width: 980px; height: 495px; }
+.wrapper .content .content__text { display: block; width: 978px; margin-top: 30px; margin-left: 2px; }
+.wrapper .content .infogra { margin-left: 2px; }
+.wrapper .content .infogra .infogra__title { display: block; width: 978px; float: left; margin-bottom: 30px; }
+.wrapper .content .infogra .infogra__bloks { float: left; width: 195.6px; }
+.wrapper .footer { width: inherit; }
+
+.wrapper { overflow: hidden; }
+.wrapper .header { overflow: inherit; }
+.wrapper .header .header__activLink { font-size: 10px; }
+.wrapper .header .header__activLink .header__activLink--bold { font-size: 14px; font-weight: bold; }
+.wrapper .header .header__tel { font-weight: bold; text-align: right; }
+.wrapper .header .header__menu a { text-decoration: none; line-height: 30px; text-align: right; color: #000; }
+.wrapper .header .header__menu a:hover { color: #cc0000; border-bottom: solid 4px #cc0000; }
+.wrapper .content .infogra .infogra__title { font-size: 36px; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+ *{ -webkit-text-size-adjust: none; } }
+
+
+
+/*# sourceMappingURL=style.css.map */
