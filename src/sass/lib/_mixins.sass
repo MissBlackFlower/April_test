@@ -281,10 +281,12 @@
 	-webkit-box-shadow: 0 0 $radius 0 rgba(0,0,0,0.5)
 	-moz-box-shadow: 0 0 $radius 0 rgba(0,0,0,0.5)
 	box-shadow: 0 0 $radius 0 rgba(0,0,0,0.5)
-=v($pos)
-	vertical-align: $pos
+=oval($radius)
+	border-radius: $radius $radius $radius $radius
+	-moz-border-radius: $radius $radius $radius $radius
+	-webkit-border-radius: $radius $radius $radius $radius
 // my variables
 $grey:rgb( 140, 140, 140 )
 $blue:rgb( 52, 132, 177 )
 $orange:rgb( 171, 39, 21 )
-$widthcontent:978px
+$widthcontent:980px

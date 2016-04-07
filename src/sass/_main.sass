@@ -1,6 +1,9 @@
 // Normally mainpage styles
+body
+  background-color: rgb(243,243,243)
 .wrapper
   overflow: hidden
+  background-color: rgb(243,243,243)
   .header
     // background-image: url(/img/Logo.png)
     // background-position: right
@@ -25,10 +28,56 @@
         border-bottom: solid 4px #cc0000
     .header__logo
   .menu
+    overflow: hidden
+    @each $i in 1,2,3,4,5,6,7
+      .menu__icon#{$i}
+        display: inline
+        float: left
+        height: 30px
+        margin-bottom: 30px
+        clear: left
+        +png(menu__icon#{$i})
+    @each $i in 1,2,3,4,5,6,7
+      .menu__icon#{$i}:hover
+        +png(menu__icon#{$i}-red)
+        color: #cc0000
+
+    .menu__link
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 10px
+      line-height: 18px
+      color: #000
+    .menu__link:hover
+      color: #cc0000
   .content
     .infogra
+      overflow: hidden
       .infogra__title
         font-size: 36px
       .infogra__bloks
+        @each $s in 1,2,3,4,5
+          .infogra__bloks__icon#{$s}
+            display: block
+            float: left
+            width: $widthcontent/5
+            height: 51px
+            margin-bottom: 5px
+            +png(infogra__bloks__icon#{$s})
+    #honors
+      overflow: hidden
 
+      .honors__title
+      .honors--container
+        overflow: hidden
+        .honors__bloks
+          text-align: center
+    .hideHonors
+      +oval(200px)
+      background-color: #cc0000
+      text-align: center
+      a
+        text-decoration: none
+        color: #fff
+        font-size: 16px
   .footer

@@ -18,8 +18,8 @@
 	//background-image: inline-image("#{$name}.jpg",'image/jpg')
 	+image-size("img/#{$name}.jpg")
 
-=svg($name, $width, $height)
-	background: url("../img/svg/#{$name}.svg") no-repeat 0 0
+=svg($name,$width,$height)
+	background: url("../img/#{$name}.svg") no-repeat 0 0
 	//background-image: inline-image('icons/svg/'+$sprite+'.svg','image/svg'); // to switches sprites to base64, elegant
 	+bg-size(#{$width}px #{$height}px)
 	width: #{$width}px

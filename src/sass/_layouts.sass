@@ -28,28 +28,69 @@
   .menu
     float: left
     width: 200px
+    margin-top: 56px
+    vertical-align: middle
+    .menu__link
+      display: inline-block
+      width: 165px
+      margin-left: 35px
+      padding-right: 45px
+      float: left
+      clear: right
+
   .content
     float: right
     margin-top: 50px
-    width: 980px
+    //переменная в конце файла миксин
+    width: $widthcontent
     video
-      width: 980px
+      width: $widthcontent
       height: 495px
     .content__text
       display: block
-      width: $widthcontent
+      width: ($widthcontent)-3
       margin-top: 30px
-      margin-left: 2px
-
+      margin-left: 3px
+      margin-bottom: 60px
     .infogra
-      margin-left: 2px
+      margin-left: 3px
+      margin-bottom: 60px
       .infogra__title
         display: block
-        width: $widthcontent
+        width: ($widthcontent)-3
         float: left
         margin-bottom: 30px
       .infogra__bloks
         float: left
-        width: $widthcontent/5
+        width: (($widthcontent)-3)/5
+        padding-right: 30px
+      .infogra__bloks:last-child
+        padding-right: 0
+    #honors
+      margin-left: 3px
+      .honors__title
+        display: block
+        width: ($widthcontent)-3
+        float: left
+        margin-bottom: 20px
+      .honors--container
+        float: left
+        clear: right
+        .honors__bloks
+          float: left
+          width: (($widthcontent)-3)/3
+          padding: 0 30px 0 30px
+          .honors__bloks__img
+            display: block
+            margin: auto
+            margin-bottom: 22px
+    .hideHonors
+      width: 220px
+      height: 36px
+      display: block
+      margin: auto
+      margin-top: 55px
+
+
   .footer
     width: inherit
