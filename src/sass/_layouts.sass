@@ -2,93 +2,93 @@
 .wrapper
   width: 1180px
   margin: auto
-  .header
-    width: inherit
-    clear: right
-    .header__activLink
-      display: block
-      float: left
-      margin-top: 60px
-    .header__tel
-      float: right
-      width: 800px
-      margin-right: 20px
-      margin-top: 20px
-    .header__menu
-      float: right
-      margin-right: 20px
-      margin-top: 19px
-      a
-        display: block
-        float: right
-        margin-left: 20px
-    .header__logo
-      display: block
-      float: right
-  .menu
+.header
+  width: inherit
+  clear: right
+  .header__activLink
+    display: block
     float: left
-    width: 200px
-    margin-top: 56px
-    vertical-align: middle
-    .menu__link
-      display: inline-block
-      width: 165px
-      margin-left: 35px
-      padding-right: 45px
-      float: left
-      clear: right
-
-  .content
+    margin-top: 60px
+  .header__tel
     float: right
-    margin-top: 50px
-    //переменная в конце файла миксин
+    width: 800px
+    margin-right: 20px
+    margin-top: 20px
+  .header__menu
+    float: right
+    margin-right: 20px
+    margin-top: 19px
+    a
+      display: block
+      float: right
+      margin-left: 20px
+  .header__logo
+    display: block
+    float: right
+.menu
+  float: left
+  width: 200px
+  margin-top: 56px
+  vertical-align: middle
+  .menu__link
+    display: inline-block
+    width: 165px
+    margin-left: 35px
+    padding-right: 45px
+    float: left
+    clear: right
+
+.content
+  float: right
+  margin-top: 50px
+  //переменная в конце файла миксин
+  width: $widthcontent
+  video
     width: $widthcontent
-    video
-      width: $widthcontent
-      height: 495px
-    .content__text
+    height: 495px
+  .content__text
+    display: block
+    width: ($widthcontent)-3
+    margin-top: 30px
+    margin-left: 3px
+    margin-bottom: 60px
+  .infogra
+    margin-left: 3px
+    margin-bottom: 60px
+    .infogra__title
       display: block
       width: ($widthcontent)-3
-      margin-top: 30px
-      margin-left: 3px
-      margin-bottom: 60px
-    .infogra
-      margin-left: 3px
-      margin-bottom: 60px
-      .infogra__title
-        display: block
-        width: ($widthcontent)-3
-        float: left
-        margin-bottom: 30px
-      .infogra__bloks
-        float: left
-        width: (($widthcontent)-3)/5
-        padding-right: 30px
-      .infogra__bloks:last-child
-        padding-right: 0
-    #honors
-      margin-left: 3px
-      .honors__title
-        display: block
-        width: ($widthcontent)-3
-        float: left
-        margin-bottom: 20px
-      .honors--container
-        float: left
-        clear: right
-        .honors__bloks
-          float: left
-          width: (($widthcontent)-3)/3
-          padding: 0 30px 0 30px
-          .honors__bloks__img
-            display: block
-            margin: auto
-            margin-bottom: 22px
-    .hideHonors
-      width: 220px
-      height: 36px
+      float: left
+      margin-bottom: 30px
+    .infogra__bloks
+      float: left
+      width: (($widthcontent)-3)/5
+      padding-right: 30px
+    .infogra__bloks:last-child
+      padding-right: 0
+  .honors
+    margin-left: 3px
+    .honors__title
       display: block
-      margin: auto
-      margin-top: 55px
-  .footer
-    width: inherit
+      width: ($widthcontent)-3
+      float: left
+      margin-bottom: 20px
+    .honors--container
+      float: left
+      clear: right
+      .honors__bloks
+        float: left
+        width: (($widthcontent)-3)/3
+        padding: 0 30px 0 30px
+        .honors__bloks__img
+          display: block
+          margin: auto
+          margin-bottom: 22px
+  .hideHonors
+    width: 220px
+    height: 36px
+    display: block
+    margin: auto
+    margin-top: 55px
+.footer
+  width: inherit
