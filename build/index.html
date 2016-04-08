@@ -96,36 +96,36 @@
 				</div>
 			</div>
 		</div>
-		<button class="hideHonors"><a id="a-honors" href="#">Скрыть награды</a></button>
+		<button class="hideHonors"><a id="a-honors" class="hideHonors__link" href="#">Скрыть награды</a></button>
 	</div>
 	<div class="footer">
-		<p class="footer__company"></p>
-		<p class="footer__contact"></p>
-		<a class="social" href="#"></a>
-		<a class="social" href="#"></a>
-		<a class="social" href="#"></a>
-		<button class="footer__email"></button>
-		<i class="footer__icon"></i>
-		<p class="footer__copyright">
-			<span class="footer__copyright--red"></span>
-			<span class="footer__copyright--red"></span>
+		<p class="footer__company">&copy;Группа компаний &laquo;МИЦ&raquo; 1999-2016</p>
+		<p class="footer__contact">Стужба клиентской поддержки +7 (495) 795-04-04</p>
+		<a class="social--fb" href="#"></a>
+		<a class="social--tw" href="#"></a>
+		<a class="social--inst" href="#"></a>
+		<button class="footer__email"><a class="footer__email--link" href="mailto:ask@miz.ru">Написать письмо</a></button>
+		<p class="footer__copyright">Разработка сайта<br/>
+			<span class="footer__copyright--red">qb ineractive</span> и
+			<span class="footer__copyright--red">AZTEK</span>
 		</p>
+		<i class="footer__icon"></i>
 	</div>
 </div>
+</body>
 <script type="text/javascript">
 $(document).ready(function(){
-
-		$("#a-honors").click(function () {
+	$("#a-honors").click(function () {
 		if ($("#honors").is(":hidden")) {
 			$("#honors").show("slow");
 			document.getElementById('a-honors').innerHTML="Скрыть награды";
-		} else {
+		}
+		else {
 			$("#honors").hide("slow");
 			document.getElementById('a-honors').innerHTML="Показать награды";
 		}
-return false;
-});
+		return false;
+	});
 });
 </script>
-</body>
 </html>

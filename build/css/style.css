@@ -43,24 +43,37 @@ body { font-family: "Roboto", sans-serif; font-size: 14px; }
 .header .header__menu a { display: block; float: right; margin-left: 20px; }
 .header .header__logo { display: block; float: right; }
 
-.menu { float: left; width: 200px; margin-top: 56px; vertical-align: middle; }
+.menu { float: left; width: 200px; margin-top: 56px; }
 .menu .menu__link { display: inline-block; width: 165px; margin-left: 35px; padding-right: 45px; float: left; clear: right; }
 
-.content { float: right; margin-top: 50px; width: 980px; }
+.content { float: right; margin-top: 50px; clear: right; width: 980px; }
 .content video { width: 980px; height: 495px; }
 .content .content__text { display: block; width: 977px; margin-top: 30px; margin-left: 3px; margin-bottom: 60px; }
 .content .infogra { margin-left: 3px; margin-bottom: 60px; }
 .content .infogra .infogra__title { display: block; width: 977px; float: left; margin-bottom: 30px; }
 .content .infogra .infogra__bloks { float: left; width: 195.4px; padding-right: 30px; }
 .content .infogra .infogra__bloks:last-child { padding-right: 0; }
-.content .honors { margin-left: 3px; }
+.content .honors { margin-left: 3px; clear: right; }
 .content .honors .honors__title { display: block; width: 977px; float: left; margin-bottom: 20px; }
 .content .honors .honors--container { float: left; clear: right; }
 .content .honors .honors--container .honors__bloks { float: left; width: 325.66667px; padding: 0 30px 0 30px; }
 .content .honors .honors--container .honors__bloks .honors__bloks__img { display: block; margin: auto; margin-bottom: 22px; }
-.content .hideHonors { width: 220px; height: 36px; display: block; margin: auto; margin-top: 55px; }
+.content .hideHonors { display: block; width: 220px; height: 36px; clear: right; margin: 55px auto 60px auto; }
+.content .hideHonors .hideHonors__link { display: block; width: 220px; height: 36px; }
 
-.footer { width: inherit; }
+.footer { width: inherit; clear: both; margin-bottom: 50px; }
+.footer .social--fb { display: block; float: left; width: 32px; height: 32px; margin-right: 10px; background: url("../img/fb.svg") no-repeat 0 0; }
+.footer .social--tw { display: block; float: left; width: 32px; height: 32px; margin-right: 10px; background: url("../img/tw.svg") no-repeat 0 0; }
+.footer .social--inst { display: block; float: left; width: 32px; height: 32px; margin-right: 10px; background: url("../img/inst.svg") no-repeat 0 0; }
+.footer .social--fb:hover { background: url("../img/fb-color.svg") no-repeat 0 0; }
+.footer .social--tw:hover { background: url("../img/tw-color.svg") no-repeat 0 0; }
+.footer .social--inst:hover { background: url("../img/inst-color.svg") no-repeat 0 0; }
+.footer .footer__company { display: block; width: 140px; float: left; margin-right: 100px; }
+.footer .footer__contact { display: block; width: 160px; float: left; margin-right: 100px; }
+.footer .footer__email { width: 120px; height: 30px; margin-left: 180px; }
+.footer .footer__email a { display: block; }
+.footer .footer__icon { display: block; float: right; width: 32px; height: 32px; margin-right: 10px; }
+.footer .footer__copyright { display: block; float: right; width: 115px; margin-right: 35px; margin-top: 4px; }
 
 body { background-color: #f3f3f3; }
 
@@ -70,7 +83,7 @@ body { background-color: #f3f3f3; }
 .header .header__activLink { font-size: 10px; }
 .header .header__activLink .header__activLink--bold { font-size: 14px; font-weight: bold; }
 .header .header__tel { font-weight: bold; text-align: right; }
-.header .header__menu a { text-decoration: none; line-height: 30px; text-align: right; color: #000; }
+.header .header__menu a { text-decoration: none; line-height: 30px; text-align: right; color: #000; border-bottom: solid 4px #f3f3f3; }
 .header .header__menu a:hover { color: #cc0000; border-bottom: solid 4px #cc0000; }
 
 .menu { overflow: hidden; }
@@ -99,10 +112,19 @@ body { background-color: #f3f3f3; }
 .content .infogra .infogra__bloks .infogra__bloks__icon4 { display: block; float: left; width: 196px; height: 51px; margin-bottom: 5px; background: url("../img/infogra__bloks__icon4.png") no-repeat 0 0; width: image-width("img/infogra__bloks__icon4.png"); height: image-height("img/infogra__bloks__icon4.png"); }
 .content .infogra .infogra__bloks .infogra__bloks__icon5 { display: block; float: left; width: 196px; height: 51px; margin-bottom: 5px; background: url("../img/infogra__bloks__icon5.png") no-repeat 0 0; width: image-width("img/infogra__bloks__icon5.png"); height: image-height("img/infogra__bloks__icon5.png"); }
 .content .honors { overflow: hidden; }
+.content .honors .honors__title { font-size: 36px; }
 .content .honors .honors--container { overflow: hidden; }
 .content .honors .honors--container .honors__bloks { text-align: center; }
-.content .hideHonors { border-radius: 200px 200px 200px 200px; -moz-border-radius: 200px 200px 200px 200px; -webkit-border-radius: 200px 200px 200px 200px; background-color: #cc0000; text-align: center; }
-.content .hideHonors a { text-decoration: none; color: #fff; font-size: 16px; }
+.content .hideHonors { border-radius: 200px 200px 200px 200px; -moz-border-radius: 200px 200px 200px 200px; -webkit-border-radius: 200px 200px 200px 200px; background-color: #cc0000; }
+.content .hideHonors .hideHonors__link { text-decoration: none; color: #fff; font-size: 16px; line-height: 36px; }
+
+.footer { overflow: hidden; color: #999A9A; font-size: 10px; }
+.footer .footer__email { border-radius: 200px 200px 200px 200px; -moz-border-radius: 200px 200px 200px 200px; -webkit-border-radius: 200px 200px 200px 200px; background-color: transparent; border: solid 1px #999A9A; }
+.footer .footer__email a { text-decoration: none; color: #999A9A; font-size: 10px; line-height: 30px; }
+.footer .footer__email:hover { border: solid 1px #cc0000; }
+.footer .footer__email:hover a { color: #cc0000; }
+.footer .footer__icon { background: url("../img/qb.png") no-repeat 0 0; width: image-width("img/qb.png"); height: image-height("img/qb.png"); }
+.footer .footer__copyright--red { color: #cc0000; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 
