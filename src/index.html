@@ -100,7 +100,7 @@
 	</div>
 	<div class="footer">
 		<p class="footer__company">&copy;Группа компаний &laquo;МИЦ&raquo; 1999-2016</p>
-		<p class="footer__contact">Стужба клиентской поддержки +7 (495) 795-04-04</p>
+		<p class="footer__contact">Стужба клиентской поддержки<br/> +7 (495) 795-04-04</p>
 		<a class="social--fb" href="#"></a>
 		<a class="social--tw" href="#"></a>
 		<a class="social--inst" href="#"></a>
@@ -116,13 +116,13 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	$("#a-honors").click(function () {
-		if ($("#honors").is(":hidden")) {
-			$("#honors").show("slow");
-			document.getElementById('a-honors').innerHTML="Скрыть награды";
-		}
-		else {
+		if ($("#honors").is(":visible")) {
 			$("#honors").hide("slow");
 			document.getElementById('a-honors').innerHTML="Показать награды";
+		}
+		else {
+			$("#honors").show("slow");
+			document.getElementById('a-honors').innerHTML="Скрыть награды";
 		}
 		return false;
 	});

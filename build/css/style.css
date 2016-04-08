@@ -34,6 +34,8 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body { font-family: "Roboto", sans-serif; font-size: 14px; }
 
+.hidden { display: none; }
+
 .wrapper { width: 1180px; margin: auto; }
 
 .header { width: inherit; clear: right; }
@@ -69,7 +71,7 @@ body { font-family: "Roboto", sans-serif; font-size: 14px; }
 .footer .social--tw:hover { background: url("../img/tw-color.svg") no-repeat 0 0; }
 .footer .social--inst:hover { background: url("../img/inst-color.svg") no-repeat 0 0; }
 .footer .footer__company { display: block; width: 140px; float: left; margin-right: 100px; }
-.footer .footer__contact { display: block; width: 160px; float: left; margin-right: 100px; }
+.footer .footer__contact { display: block; width: 190px; float: left; margin-right: 70px; }
 .footer .footer__email { width: 120px; height: 30px; margin-left: 180px; }
 .footer .footer__email a { display: block; }
 .footer .footer__icon { display: block; float: right; width: 32px; height: 32px; margin-right: 10px; }
@@ -115,13 +117,13 @@ body { background-color: #f3f3f3; }
 .content .honors .honors__title { font-size: 36px; }
 .content .honors .honors--container { overflow: hidden; }
 .content .honors .honors--container .honors__bloks { text-align: center; }
-.content .hideHonors { border-radius: 200px 200px 200px 200px; -moz-border-radius: 200px 200px 200px 200px; -webkit-border-radius: 200px 200px 200px 200px; background-color: #cc0000; }
+.content .hideHonors { border-radius: 200px 200px 200px 200px; -moz-border-radius: 200px 200px 200px 200px; -webkit-border-radius: 200px 200px 200px 200px; background-color: #cc0000; color: #fff; font-size: 16px; line-height: 36px; }
 .content .hideHonors .hideHonors__link { text-decoration: none; color: #fff; font-size: 16px; line-height: 36px; }
 
-.footer { overflow: hidden; color: #999A9A; font-size: 10px; }
-.footer .footer__email { border-radius: 200px 200px 200px 200px; -moz-border-radius: 200px 200px 200px 200px; -webkit-border-radius: 200px 200px 200px 200px; background-color: transparent; border: solid 1px #999A9A; }
+.footer { overflow: hidden; color: #999A9A; font-size: 12px; }
+.footer .footer__email { border-radius: 200px 200px 200px 200px; -moz-border-radius: 200px 200px 200px 200px; -webkit-border-radius: 200px 200px 200px 200px; background-color: transparent; border: solid 1px #999A9A; color: #999A9A; }
 .footer .footer__email a { text-decoration: none; color: #999A9A; font-size: 10px; line-height: 30px; }
-.footer .footer__email:hover { border: solid 1px #cc0000; }
+.footer .footer__email:hover { color: #cc0000; border: solid 1px #cc0000; }
 .footer .footer__email:hover a { color: #cc0000; }
 .footer .footer__icon { background: url("../img/qb.png") no-repeat 0 0; width: image-width("img/qb.png"); height: image-height("img/qb.png"); }
 .footer .footer__copyright--red { color: #cc0000; }
