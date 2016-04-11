@@ -30,7 +30,6 @@ function toggle(el) {
 	isHidden(el) ? show(el) : hide(el)
 }
 
-
 function show(el) {
 
 	if (getRealDisplay(el) != 'none') return

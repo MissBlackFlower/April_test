@@ -27,17 +27,17 @@ body
   .header__logo
 .menu
   overflow: hidden
-  @each $i in 1,2,3,4,5,6,7
-    .menu__icon#{$i}
+  @each $i in company,history,boss,units,heart,hands,card
+    .icon_#{$i}
       display: inline
       float: left
       height: 30px
       margin-bottom: 30px
       clear: left
-      +png(menu__icon#{$i})
-  @each $i in 1,2,3,4,5,6,7
-    .menu__icon#{$i}:hover
-      +png(menu__icon#{$i}-red)
+      +png(#{$i})
+  @each $i in company,history,boss,units,heart,hands,card
+    .icon_#{$i}:hover
+      +png(#{$i}-red)
       color: #cc0000
 
   .menu__link
@@ -54,19 +54,19 @@ body
     .infogra__title
       font-size: 36px
     .infogra__bloks
-      @each $s in 1,2,3,4,5
-        .infogra__bloks__icon#{$s}
+      @each $s in workers,houses,experience,unit,case
+        .icon_#{$s}
           display: block
           float: left
           width: $widthcontent/5
           height: 51px
           margin-bottom: 5px
-          +png(infogra__bloks__icon#{$s})
+          +png(icon_#{$s})
   .honors
     overflow: hidden
     .honors__title
       font-size: 36px
-    .honors--container
+    .honors__container
       overflow: hidden
       .honors__bloks
         text-align: center
@@ -75,12 +75,7 @@ body
     background-color: #cc0000
     color: #fff
     font-size: 16px
-    line-height: 36px    
-    .hideHonors__link
-      text-decoration: none
-      color: #fff
-      font-size: 16px
-      line-height: 36px
+    line-height: 36px
 .footer
   overflow: hidden
   color: #999A9A

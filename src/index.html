@@ -8,6 +8,7 @@
 	<meta name="theme-color" content="#fff">
 	<link rel="stylesheet" media="all" href="css/style.css" >
 	<script src="js/app.js"></script>
+	<script src="js/toggle.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -27,37 +28,37 @@
 	</div>
 	<div class="menu">
 		<ul>
-			<li class="menu__icon1"><a class="menu__link" href="#">о компании</a></li>
-			<li class="menu__icon2"><a class="menu__link" href="#">история</a></li>
-			<li class="menu__icon3"><a class="menu__link" href="#">руководство</a></li>
-			<li class="menu__icon4"><a class="menu__link" href="#">подразделения</a></li>
-			<li class="menu__icon5"><a class="menu__link" href="#">социальная ответственность</a></li>
-			<li class="menu__icon6"><a class="menu__link" href="#">сотрудничетсво с нами</a></li>
-			<li class="menu__icon7"><a class="menu__link" href="#">работа у нас</a></li>
+			<li class="icon_company"><a class="menu__link" href="#">о компании</a></li>
+			<li class="icon_history"><a class="menu__link" href="#">история</a></li>
+			<li class="icon_boss"><a class="menu__link" href="#">руководство</a></li>
+			<li class="icon_units"><a class="menu__link" href="#">подразделения</a></li>
+			<li class="icon_heart"><a class="menu__link" href="#">социальная ответственность</a></li>
+			<li class="icon_hands"><a class="menu__link" href="#">сотрудничетсво с нами</a></li>
+			<li class="icon_card"><a class="menu__link" href="#">работа у нас</a></li>
 		</ul>
 	</div>
 	<div class="content">
 		<div class="infogra">
 			<h1 class="infogra__title">Группа компаний МИЦ – это:</h1>
 			<div class="infogra__bloks">
-				<i class="infogra__bloks__icon1"></i>
-				<span class="infogra__bloks__caption"><b>Более 2 000</b><br/> сотрудников</span>
+				<i class="icon_workers"></i>
+				<span class="infogra__captions"><b>Более 2 000</b><br/> сотрудников</span>
 			</div>
 			<div class="infogra__bloks">
-				<i class="infogra__bloks__icon2"></i>
-				<span class="infogra__bloks__caption"><b>5 миллионов</b><br/> квадратных метров жилья</span>
+				<i class="icon_houses"></i>
+				<span class="infogra__captions"><b>5 миллионов</b><br/> квадратных метров жилья</span>
 			</div>
 			<div class="infogra__bloks">
-				<i class="infogra__bloks__icon3"></i>
-				<span class="infogra__bloks__caption"><b>15-летний опыт</b><br/> на российском рынке</span>
+				<i class="icon_experience"></i>
+				<span class="infogra__captions"><b>15-летний опыт</b><br/> на российском рынке</span>
 			</div>
 			<div class="infogra__bloks">
-				<i class="infogra__bloks__icon4"></i>
-				<span class="infogra__bloks__caption"><b>Более 30 подразделений</b><br/> различных направлений</span>
+				<i class="icon_unit"></i>
+				<span class="infogra__captions"><b>Более 30 подразделений</b><br/> различных направлений</span>
 			</div>
 			<div class="infogra__bloks">
-				<i class="infogra__bloks__icon5"></i>
-				<span class="infogra__bloks__caption"><b>Более 20 проектов:</b><br/> готовые, сданные, и в стадии строительства</span>
+				<i class="icon_case"></i>
+				<span class="infogra__captions"><b>Более 20 проектов:</b><br/> готовые, сданные, и в стадии строительства</span>
 			</div>
 		</div>
 		<video src="#" poster="/img/video.png"></video>
@@ -67,36 +68,37 @@
 		Мы думаем о людях. Популярность наших проектов – это сочетание высокого качества строительства и заботы о нуждах наших клиентов. Мы не просто строим дома - мы тщательно продумываем всю необходимую социальную инфраструктуру для комфортного жилья: парковки, детские сады и площадки, прогулочные дорожки и многое другое. </p>
 		<div id="honors" class="honors">
 			<h1 class="honors__title">Награды</h1>
-			<div class="honors--container">
+			<div class="honors__container">
 				<div class="honors__bloks">
-					<img class="honors__bloks__img" src="/img/honors__bloks__img1.png">
-					<span class="honors__bloks__text">Председатель совета директоров ГК «МИЦ», Андрей Рябинский, вошел в рейтинг «ТОП-1000 региональных руководителей предприятий», по версии Ассоциации Менеджеров совместно с ИД «КоммерсантЪ»</span>
+					<img class="honors__img" src="/img/honors__bloks__img1.png">
+					<span class="honors__text">Председатель совета директоров ГК «МИЦ», Андрей Рябинский, вошел в рейтинг «ТОП-1000 региональных руководителей предприятий», по версии Ассоциации Менеджеров совместно с ИД «КоммерсантЪ»</span>
 				</div>
 				<div class="honors__bloks">
-					<img class="honors__bloks__img" src="/img/honors__bloks__img2.png">
+					<img class="honors__img" src="/img/honors__bloks__img2.png">
 					<span class="honors__bloks__text">«Девелопер года» по итогам ежегодной международной премии за достижения на рынке российской и зарубежной недвижимости «Рекорды рынка недвижимости 2012»</span>
 				</div>
 				<div class="honors__bloks">
-					<img class="honors__bloks__img" src="/img/honors__bloks__img3.png">
+					<img class="honors__img" src="/img/honors__bloks__img3.png">
 					<span class="honors__bloks__text">Лауреат ежегодной национальной премии в области бизнеса «Компания года 2012», по версии РБК, в номинации «Строительство»</span>
 				</div>
 			</div>
-			<div class="honors--container">
+			<div class="honors__container">
 				<div class="honors__bloks">
-					<img class="honors__bloks__img" src="/img/honors__bloks__img1.png">
-					<span class="honors__bloks__text">Председатель совета директоров ГК «МИЦ», Андрей Рябинский, вошел в рейтинг «ТОП-1000 региональных руководителей предприятий», по версии Ассоциации Менеджеров совместно с ИД «КоммерсантЪ»</span>
+					<img class="honors__img" src="/img/honors__bloks__img1.png">
+					<span class="honors__text">Председатель совета директоров ГК «МИЦ», Андрей Рябинский, вошел в рейтинг «ТОП-1000 региональных руководителей предприятий», по версии Ассоциации Менеджеров совместно с ИД «КоммерсантЪ»</span>
 				</div>
 				<div class="honors__bloks">
-					<img class="honors__bloks__img" src="/img/honors__bloks__img2.png">
-					<span class="honors__bloks__text">«Девелопер года» по итогам ежегодной международной премии за достижения на рынке российской и зарубежной недвижимости «Рекорды рынка недвижимости 2012»</span>
+					<img class="honors__img" src="/img/honors__bloks__img2.png">
+					<span class="honors__text">«Девелопер года» по итогам ежегодной международной премии за достижения на рынке российской и зарубежной недвижимости «Рекорды рынка недвижимости 2012»</span>
 				</div>
 				<div class="honors__bloks">
-					<img class="honors__bloks__img" src="/img/honors__bloks__img3.png">
-					<span class="honors__bloks__text">Лауреат ежегодной национальной премии в области бизнеса «Компания года 2012», по версии РБК, в номинации «Строительство»</span>
+					<img class="honors__img" src="/img/honors__bloks__img3.png">
+					<span class="honors__text">Лауреат ежегодной национальной премии в области бизнеса «Компания года 2012», по версии РБК, в номинации «Строительство»</span>
 				</div>
 			</div>
 		</div>
-		<button class="hideHonors"><a id="a-honors" class="hideHonors__link" href="#">Скрыть награды</a></button>
+		<input type="button" id="hideHonors" class="hideHonors" onclick="toggle(honors)" value="Скрыть награды"/>
+		<!-- <button class="hideHonors"><a id="a-honors" class="hideHonors__link" href="#">Скрыть награды</a></button> -->
 	</div>
 	<div class="footer">
 		<p class="footer__company">&copy;Группа компаний &laquo;МИЦ&raquo; 1999-2016</p>
@@ -113,19 +115,19 @@
 	</div>
 </div>
 </body>
-<script type="text/javascript">
-$(document).ready(function(){
-	$("#a-honors").click(function () {
-		if ($("#honors").is(":visible")) {
-			$("#honors").hide("slow");
-			document.getElementById('a-honors').innerHTML="Показать награды";
-		}
-		else {
-			$("#honors").show("slow");
-			document.getElementById('a-honors').innerHTML="Скрыть награды";
-		}
-		return false;
-	});
+<script>
+   $(function ()
+{
+    $('.hideHonors').click(function(){
+    if ($('.hideHonors').val() == "Скрыть награды")
+    {
+        $('.hideHonors').val("Показать награды");
+    }
+    else
+    {
+        $('.hideHonors').val("Скрыть награды");
+    }
 });
+})
 </script>
 </html>
