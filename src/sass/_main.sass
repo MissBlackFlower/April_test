@@ -29,25 +29,26 @@ body
   overflow: hidden
   @each $i in company,history,boss,units,heart,hands,card
     .icon_#{$i}
-      display: inline
+      display: inline-block
       float: left
       height: 30px
       margin-bottom: 30px
       clear: left
       +png(#{$i})
+      background-position: left bottom
   @each $i in company,history,boss,units,heart,hands,card
     .icon_#{$i}:hover
       +png(#{$i}-red)
+      background-position: left bottom
       color: #cc0000
-
+      .menu__link
+        color: #cc0000
   .menu__link
     text-decoration: none
     text-transform: uppercase
-    font-size: 10px
+    font-size: 12px
     line-height: 18px
     color: #000
-  .menu__link:hover
-    color: #cc0000
 .content
   .infogra
     overflow: hidden

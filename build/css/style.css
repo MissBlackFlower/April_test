@@ -45,8 +45,9 @@ body { font-family: "Roboto", sans-serif; font-size: 14px; }
 .header .header__menu a { display: block; float: right; margin-left: 20px; }
 .header .header__logo { display: block; float: right; }
 
-.menu { float: left; width: 200px; margin-top: 56px; }
-.menu .menu__link { display: inline-block; width: 165px; margin-left: 35px; padding-right: 45px; float: left; clear: right; }
+.menu { float: left; width: 200px; margin-top: 50px; }
+.menu .menu__link { display: inline-block; width: 165px; height: 30px; margin-left: 35px; margin-top: 12px; padding-right: 45px; float: left; clear: right; }
+.menu .dubleline { margin-top: 6px; }
 
 .content { float: right; margin-top: 50px; clear: right; width: 980px; }
 .content video { width: 980px; height: 495px; }
@@ -61,7 +62,6 @@ body { font-family: "Roboto", sans-serif; font-size: 14px; }
 .content .honors .honors__container .honors__bloks { float: left; width: 325.66667px; padding: 0 30px 0 30px; }
 .content .honors .honors__container .honors__bloks .honors__img { display: block; margin: auto; margin-bottom: 22px; }
 .content .hideHonors { display: block; width: 220px; height: 36px; clear: right; margin: 55px auto 60px auto; }
-.content .hideHonors .hideHonors__link { display: block; width: 220px; height: 36px; }
 
 .footer { width: inherit; clear: both; margin-bottom: 50px; }
 .footer .social--fb { display: block; float: left; width: 32px; height: 32px; margin-right: 10px; background: url("../img/fb.svg") no-repeat 0 0; }
@@ -89,22 +89,28 @@ body { background-color: #f3f3f3; }
 .header .header__menu a:hover { color: #cc0000; border-bottom: solid 4px #cc0000; }
 
 .menu { overflow: hidden; }
-.menu .icon_company { display: inline; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/company.png") no-repeat 0 0; width: image-width("img/company.png"); height: image-height("img/company.png"); }
-.menu .icon_history { display: inline; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/history.png") no-repeat 0 0; width: image-width("img/history.png"); height: image-height("img/history.png"); }
-.menu .icon_boss { display: inline; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/boss.png") no-repeat 0 0; width: image-width("img/boss.png"); height: image-height("img/boss.png"); }
-.menu .icon_units { display: inline; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/units.png") no-repeat 0 0; width: image-width("img/units.png"); height: image-height("img/units.png"); }
-.menu .icon_heart { display: inline; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/heart.png") no-repeat 0 0; width: image-width("img/heart.png"); height: image-height("img/heart.png"); }
-.menu .icon_hands { display: inline; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/hands.png") no-repeat 0 0; width: image-width("img/hands.png"); height: image-height("img/hands.png"); }
-.menu .icon_card { display: inline; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/card.png") no-repeat 0 0; width: image-width("img/card.png"); height: image-height("img/card.png"); }
-.menu .icon_company:hover { background: url("../img/company-red.png") no-repeat 0 0; width: image-width("img/company-red.png"); height: image-height("img/company-red.png"); color: #cc0000; }
-.menu .icon_history:hover { background: url("../img/history-red.png") no-repeat 0 0; width: image-width("img/history-red.png"); height: image-height("img/history-red.png"); color: #cc0000; }
-.menu .icon_boss:hover { background: url("../img/boss-red.png") no-repeat 0 0; width: image-width("img/boss-red.png"); height: image-height("img/boss-red.png"); color: #cc0000; }
-.menu .icon_units:hover { background: url("../img/units-red.png") no-repeat 0 0; width: image-width("img/units-red.png"); height: image-height("img/units-red.png"); color: #cc0000; }
-.menu .icon_heart:hover { background: url("../img/heart-red.png") no-repeat 0 0; width: image-width("img/heart-red.png"); height: image-height("img/heart-red.png"); color: #cc0000; }
-.menu .icon_hands:hover { background: url("../img/hands-red.png") no-repeat 0 0; width: image-width("img/hands-red.png"); height: image-height("img/hands-red.png"); color: #cc0000; }
-.menu .icon_card:hover { background: url("../img/card-red.png") no-repeat 0 0; width: image-width("img/card-red.png"); height: image-height("img/card-red.png"); color: #cc0000; }
-.menu .menu__link { text-decoration: none; text-transform: uppercase; font-size: 10px; line-height: 18px; color: #000; }
-.menu .menu__link:hover { color: #cc0000; }
+.menu .icon_company { display: inline-block; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/company.png") no-repeat 0 0; width: image-width("img/company.png"); height: image-height("img/company.png"); background-position: left bottom; }
+.menu .icon_history { display: inline-block; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/history.png") no-repeat 0 0; width: image-width("img/history.png"); height: image-height("img/history.png"); background-position: left bottom; }
+.menu .icon_boss { display: inline-block; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/boss.png") no-repeat 0 0; width: image-width("img/boss.png"); height: image-height("img/boss.png"); background-position: left bottom; }
+.menu .icon_units { display: inline-block; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/units.png") no-repeat 0 0; width: image-width("img/units.png"); height: image-height("img/units.png"); background-position: left bottom; }
+.menu .icon_heart { display: inline-block; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/heart.png") no-repeat 0 0; width: image-width("img/heart.png"); height: image-height("img/heart.png"); background-position: left bottom; }
+.menu .icon_hands { display: inline-block; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/hands.png") no-repeat 0 0; width: image-width("img/hands.png"); height: image-height("img/hands.png"); background-position: left bottom; }
+.menu .icon_card { display: inline-block; float: left; height: 30px; margin-bottom: 30px; clear: left; background: url("../img/card.png") no-repeat 0 0; width: image-width("img/card.png"); height: image-height("img/card.png"); background-position: left bottom; }
+.menu .icon_company:hover { background: url("../img/company-red.png") no-repeat 0 0; width: image-width("img/company-red.png"); height: image-height("img/company-red.png"); background-position: left bottom; color: #cc0000; }
+.menu .icon_company:hover .menu__link { color: #cc0000; }
+.menu .icon_history:hover { background: url("../img/history-red.png") no-repeat 0 0; width: image-width("img/history-red.png"); height: image-height("img/history-red.png"); background-position: left bottom; color: #cc0000; }
+.menu .icon_history:hover .menu__link { color: #cc0000; }
+.menu .icon_boss:hover { background: url("../img/boss-red.png") no-repeat 0 0; width: image-width("img/boss-red.png"); height: image-height("img/boss-red.png"); background-position: left bottom; color: #cc0000; }
+.menu .icon_boss:hover .menu__link { color: #cc0000; }
+.menu .icon_units:hover { background: url("../img/units-red.png") no-repeat 0 0; width: image-width("img/units-red.png"); height: image-height("img/units-red.png"); background-position: left bottom; color: #cc0000; }
+.menu .icon_units:hover .menu__link { color: #cc0000; }
+.menu .icon_heart:hover { background: url("../img/heart-red.png") no-repeat 0 0; width: image-width("img/heart-red.png"); height: image-height("img/heart-red.png"); background-position: left bottom; color: #cc0000; }
+.menu .icon_heart:hover .menu__link { color: #cc0000; }
+.menu .icon_hands:hover { background: url("../img/hands-red.png") no-repeat 0 0; width: image-width("img/hands-red.png"); height: image-height("img/hands-red.png"); background-position: left bottom; color: #cc0000; }
+.menu .icon_hands:hover .menu__link { color: #cc0000; }
+.menu .icon_card:hover { background: url("../img/card-red.png") no-repeat 0 0; width: image-width("img/card-red.png"); height: image-height("img/card-red.png"); background-position: left bottom; color: #cc0000; }
+.menu .icon_card:hover .menu__link { color: #cc0000; }
+.menu .menu__link { text-decoration: none; text-transform: uppercase; font-size: 12px; line-height: 18px; color: #000; }
 
 .content .infogra { overflow: hidden; }
 .content .infogra .infogra__title { font-size: 36px; }
