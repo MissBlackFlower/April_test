@@ -15,11 +15,11 @@
     float: right
     width: 800px
     margin-right: 20px
-    margin-top: 20px
+    margin-top: 22px
   .header__menu
     float: right
     margin-right: 20px
-    margin-top: 19px
+    margin-top: 16px
     a
       display: block
       float: right
@@ -30,18 +30,23 @@
 .menu
   float: left
   width: 200px
-  margin-top: 50px
-  .menu__link
-    display: inline-block
-    width: 165px
-    height: 30px
-    margin-left: 35px
-    margin-top: 12px
-    padding-right: 45px
-    float: left
-    clear: right
-  .dubleline
-    margin-top: 6px
+  margin-top: 56px
+  li
+    display: block
+    width: 28px
+    height: 25px
+    margin-bottom: 40px
+    position: relative
+    .menu__link
+      position: absolute
+      display: block
+      padding-right: 50px
+      top: 0
+      left: 35px
+      width: 160px
+      height: 28px
+      float: left
+      clear: right
 .content
   float: right
   margin-top: 50px
@@ -52,24 +57,28 @@
     width: $widthcontent
     height: 495px
   .content__text
-    display: block
-    width: ($widthcontent)-3
+    width: ($widthcontent)
     margin-top: 30px
     margin-left: 3px
-    margin-bottom: 60px
+    p
+      margin-bottom: 23px
   .infogra
     margin-left: 3px
     margin-bottom: 60px
     .infogra__title
       display: block
-      width: ($widthcontent)-3
+      width: ($widthcontent)
       float: left
       margin-bottom: 30px
-    .infogra__bloks
+    .infogra__blocks
       float: left
       width: (($widthcontent)-3)/5
       padding-right: 30px
-    .infogra__bloks:last-child
+    .infogra__captions
+      display: block
+      float: left
+      clear: left
+    .infogra__blocks:last-child
       padding-right: 0
   .honors
     margin-left: 3px
@@ -82,7 +91,8 @@
     .honors__container
       float: left
       clear: right
-      .honors__bloks
+      margin-bottom: 75px
+      .honors__blocks
         float: left
         width: (($widthcontent)-3)/3
         padding: 0 30px 0 30px
@@ -95,7 +105,7 @@
     width: 220px
     height: 36px
     clear: right
-    margin: 55px auto 60px auto
+    margin: 0 auto 60px auto
 .footer
   width: inherit
   clear: both
@@ -125,7 +135,7 @@
     width: 120px
     height: 30px
     float:left
-    margin-left: 180px
+    margin-left: 170px
     a
       display: block
   .footer__icon

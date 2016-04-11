@@ -7,11 +7,12 @@ body
 .header
   overflow: inherit
   .header__activLink
-    font-size: 10px
+    font-size: 12px
     .header__activLink--bold
-      font-size: 14px
+      font-size: 16px
       font-weight: bold
   .header__tel
+    font-size: 16px
     font-weight: bold
     text-align: right
   .header__menu
@@ -29,24 +30,20 @@ body
   overflow: hidden
   @each $i in company,history,boss,units,heart,hands,card
     .icon_#{$i}
-      display: inline-block
-      float: left
-      height: 30px
-      margin-bottom: 30px
-      clear: left
-      +png(#{$i})
-      background-position: left bottom
-  @each $i in company,history,boss,units,heart,hands,card
-    .icon_#{$i}:hover
-      +png(#{$i}-red)
-      background-position: left bottom
-      color: #cc0000
-      .menu__link
+      display: block
+      margin: auto auto
+      +s(#{$i})
+  li:hover
+    @each $i in company,history,boss,units,heart,hands,card
+      .icon_#{$i}
+        +s(#{$i}-red)
         color: #cc0000
+    .menu__link
+      color: #cc0000
   .menu__link
     text-decoration: none
     text-transform: uppercase
-    font-size: 12px
+    font-size: 11px
     line-height: 18px
     color: #000
 .content
@@ -54,7 +51,7 @@ body
     overflow: hidden
     .infogra__title
       font-size: 36px
-    .infogra__bloks
+    .infogra__blocks
       @each $s in workers,houses,experience,unit,case
         .icon_#{$s}
           display: block
@@ -62,14 +59,18 @@ body
           width: $widthcontent/5
           height: 51px
           margin-bottom: 5px
-          +png(icon_#{$s})
+          +s(icon_#{$s})
+  .content__text
+    overflow: hidden
+    font-size: 15px
+    line-height: 25px
   .honors
     overflow: hidden
     .honors__title
-      font-size: 36px
+      font-size: 30px
     .honors__container
       overflow: hidden
-      .honors__bloks
+      .honors__blocks
         text-align: center
   .hideHonors
     +oval(200px)
@@ -80,12 +81,13 @@ body
 .footer
   overflow: hidden
   color: #999A9A
-  font-size: 12px
+  font-size: 11px
   .footer__email
     +oval(200px)
     background-color: transparent
     border: solid 1px #999A9A
     color: #999A9A
+    font-size: 10px
     a
       text-decoration: none
       color: #999A9A
@@ -97,6 +99,6 @@ body
     a
       color: #cc0000
   .footer__icon
-    +png(qb)
+    +s(qb)
   .footer__copyright--red
     color: #cc0000
