@@ -27,11 +27,9 @@ body
       border-bottom: solid 4px #cc0000
   .header__logo
 .menu
-  overflow: hidden
   @each $i in company,history,boss,units,heart,hands,card
     .icon_#{$i}
-      display: block
-      margin: auto auto
+      display: inline-block
       +s(#{$i})
   li:hover
     @each $i in company,history,boss,units,heart,hands,card

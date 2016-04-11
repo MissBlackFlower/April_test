@@ -32,19 +32,22 @@
   width: 200px
   margin-top: 56px
   li
-    display: block
-    width: 28px
-    height: 25px
-    margin-bottom: 40px
+    display: inline-block
     position: relative
-    .menu__link
+    vertical-align: middle
+    margin-bottom: 40px
+    .icon
+      display: inline-block
       position: absolute
-      display: block
+      top: 50%
+      transform: translate(0, -50%)
+      width: 30px
+      height: 30px
+    .menu__link
+      display: inline-block
       padding-right: 50px
-      top: 0
-      left: 35px
       width: 160px
-      height: 28px
+      margin-left: 40px
       float: left
       clear: right
 .content
@@ -111,7 +114,7 @@
   clear: both
   margin-bottom: 50px
   @each $i in fb,tw,inst
-    .social--#{$i}
+    .social__#{$i}
       display: block
       float: left
       width: 32px
@@ -119,7 +122,7 @@
       margin-right: 10px
       +svg(#{$i})
   @each $i in fb,tw,inst
-    .social--#{$i}:hover
+    .social__#{$i}:hover
       +svg(#{$i}-color)
   .footer__company
     display: block
