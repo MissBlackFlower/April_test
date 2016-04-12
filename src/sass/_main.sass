@@ -29,7 +29,7 @@ body
 .menu
   @each $i in company,history,boss,units,heart,hands,card
     .icon_#{$i}
-      display: block
+      display: inline-block
       +s(#{$i})
   li:hover
     @each $i in company,history,boss,units,heart,hands,card

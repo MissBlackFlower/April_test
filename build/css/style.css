@@ -45,9 +45,9 @@ body { font-family: "Roboto", sans-serif; font-size: 14px; }
 .header .header__menu a { display: block; float: right; margin-left: 20px; }
 .header .header__logo { display: block; float: right; }
 
-.menu { float: left; width: 200px; margin-top: 56px; }
-.menu li { display: inline-block; position: relative; vertical-align: middle; margin-bottom: 45px; }
-.menu li .icon { position: absolute; top: 50%; left: 0; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); width: 30px; height: 30px; clear: left; }
+.menu { float: left; width: 200px; margin-top: 60px; }
+.menu li { display: inline-block; position: relative; vertical-align: middle; margin-bottom: 42px; }
+.menu li .icon { position: absolute; top: 50%; left: 0; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); width: 30px; height: 30px; clear: left; text-align: center; }
 .menu li .menu__link { display: block; padding-right: 50px; width: 160px; margin-left: 36px; float: left; clear: right; }
 
 .content { float: right; margin-top: 50px; clear: right; width: 980px; }
@@ -91,13 +91,13 @@ body { background-color: #f3f3f3; }
 .header .header__menu a { text-decoration: none; line-height: 30px; text-align: right; color: #000; border-bottom: solid 4px #f3f3f3; }
 .header .header__menu a:hover { color: #cc0000; border-bottom: solid 4px #cc0000; }
 
-.menu .icon_company { display: block; background-image: url("../img/icons.png"); width: 24px; height: 23px; background-position: -28px -130px; }
-.menu .icon_history { display: block; background-image: url("../img/icons.png"); width: 20px; height: 22px; background-position: -189px -58px; }
-.menu .icon_boss { display: block; background-image: url("../img/icons.png"); width: 20px; height: 25px; background-position: -189px 0px; }
-.menu .icon_units { display: block; background-image: url("../img/icons.png"); width: 22px; height: 24px; background-position: 0px -157px; }
-.menu .icon_heart { display: block; background-image: url("../img/icons.png"); width: 25px; height: 21px; background-position: -64px -105px; }
-.menu .icon_hands { display: block; background-image: url("../img/icons.png"); width: 28px; height: 21px; background-position: -32px -105px; }
-.menu .icon_card { display: block; background-image: url("../img/icons.png"); width: 23px; height: 21px; background-position: -122px -105px; }
+.menu .icon_company { display: inline-block; background-image: url("../img/icons.png"); width: 24px; height: 23px; background-position: -28px -130px; }
+.menu .icon_history { display: inline-block; background-image: url("../img/icons.png"); width: 20px; height: 22px; background-position: -189px -58px; }
+.menu .icon_boss { display: inline-block; background-image: url("../img/icons.png"); width: 20px; height: 25px; background-position: -189px 0px; }
+.menu .icon_units { display: inline-block; background-image: url("../img/icons.png"); width: 22px; height: 24px; background-position: 0px -157px; }
+.menu .icon_heart { display: inline-block; background-image: url("../img/icons.png"); width: 25px; height: 21px; background-position: -64px -105px; }
+.menu .icon_hands { display: inline-block; background-image: url("../img/icons.png"); width: 28px; height: 21px; background-position: -32px -105px; }
+.menu .icon_card { display: inline-block; background-image: url("../img/icons.png"); width: 23px; height: 21px; background-position: -122px -105px; }
 .menu li:hover .icon_company { background-image: url("../img/icons.png"); width: 24px; height: 23px; background-position: 0px -130px; color: #cc0000; }
 .menu li:hover .icon_history { background-image: url("../img/icons.png"); width: 20px; height: 22px; background-position: -189px -84px; color: #cc0000; }
 .menu li:hover .icon_boss { background-image: url("../img/icons.png"); width: 20px; height: 25px; background-position: -189px -29px; color: #cc0000; }
